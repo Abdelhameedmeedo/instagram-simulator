@@ -1,0 +1,176 @@
+/*********************start story**********************/
+.story-row{padding: 10px 0 140px;border-bottom: 2px solid;}
+.story-image{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border-radius: 50%;
+    padding: 28px;
+}
+.main-image{position: relative;}
+.main-image svg{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    background: lightcoral;
+    left: 90px;
+    top: 107px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/***************end story******************/
+/*****************************start content 1******************/
+.content {
+    width: 105%;
+    padding-top: 5px;
+    margin: 57px 0 0 0;
+    position: relative;
+    /*start scroll*/
+    overflow-y: scroll;
+    max-height: 720px;
+    /*end scroll*/
+    background: #6610C8;
+}
+
+/*start  content shares */
+.div1,.div2,.div3,.div4,.div5{
+    padding: 110px 0 60px 0;
+    position: relative;
+    border-bottom: 2px solid antiquewhite;
+}
+.content .div{
+    position: relative;
+}
+.content .div .fa-minus-circle{
+    position: relative;
+    left: -155px;
+    color: gray;
+    cursor: pointer;
+}
+.div1{padding-top: 120px;}
+.main-img img{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: 30px;
+    top: -105px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.full-img img{width: 100%;height: 400px;}
+.content span{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    font-size: 30px;
+    color: thistle;
+}
+.right-columns svg{
+    font-size: 32px;
+    color: thistle;
+    position: relative;
+    top: -15px;
+    right: -55px;
+    cursor: pointer;
+}
+.content .cont{
+    font-size: 25px;
+    padding: 10px 0 0 0px;
+    margin: 0 0 0 35px;
+    cursor: pointer;
+}
+.cont svg{color: lightgray;}
+/* end content shares*/
+/* start overlay*/
+.c-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+}
+.c-overlay .c-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    background: rgba(3,3,3,.4);
+}
+.c-overlay .c-container .spans-cont{
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: teal;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.spans-cont span{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.spans-cont .close-btn{
+    border-bottom-right-radius: 30px;
+    background: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    cursor: pointer;
+}
+/* end overlay*/
+/********************end content *******************/
+
+
+/*****************start content for mobile*******************/
+@media only screen and (max-width:768px){
+    .content{
+        width: 100%;
+        overflow-y: unset;
+        margin: unset;
+        padding: 0px 0 15px 0;
+        height: 100%;
+        max-height: 100%;
+        margin-top: 69px;
+    }
+    .first-img{
+        position: absolute;
+        left: -32px;
+    }
+    .main-image svg{
+    position: absolute;
+    left: 70px;
+    top: 100px;
+    }
+    .last{
+        display: none;
+    }
+    .div .main-img img{
+        position: absolute;
+        left: 6px;
+        width: 125px;
+        height: 125px;
+    }
+    .content .div .fa-minus-circle{
+    position: relative;
+    left: -95px;
+    }
+    .right-columns svg{    position: relative;
+        right: -33px;}
+}
+/*****************end content for mobile*******************/

@@ -1,0 +1,76 @@
+.setting-file{
+    position: fixed;
+    width:16.5%;
+    padding: 30px 0 0px 0;
+    background: lightslategrey;
+    color: lightgray;
+    min-height: 100vh;
+    margin: 68px 0px 0 0px;
+}
+.setting-file .cont{
+    position: relative;
+    display: flex;
+    padding: 0 0 60px 0;
+}
+.setting-file span{
+    position: absolute;
+    padding: 6px 0 0 22px;
+    font-size: 13px;
+}
+.setting-file .cont svg{ font-size: 25px; }
+.effect-cont{cursor: pointer;}
+i{
+    font-size: 25px;
+}
+.setting-file .fa-moon{
+    display: none;
+}
+.fa-sun{
+    color: yellow;
+}
+/*start setting element*/
+.setting-element{
+    display: none;
+    transition: all .5s;
+    position: relative;
+    top: 68px;
+    background: darkslategrey;
+    height: 626px;
+    padding: 0px;
+    z-index: 9999;
+    width: 114%;
+}
+.setting-element button{
+    background: red;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-bottom-right-radius: 5px;
+}
+.setting-element .col-lg-12{margin: 35px 0;cursor: pointer;}
+.setting-element i{padding: 0 30px 0 0;color: darkgray;}
+.setting-element .col-lg-12 span{color: darkgray;font-size: 18px;}
+/*snd setting element*/
+
+/**********************start settings for mobile******************/
+@media only screen and (max-width:768px){
+    .setting-file{
+        position: fixed;
+        width: 105%;
+        top: 1px;
+        min-height: 88vh;
+        padding: 15px;
+        max-height: 50px;
+        z-index: 99999;
+    }
+    .setting-file .cont{padding-bottom: 52px;}
+    .setting-file span{
+        position: absolute;
+        font-size: 25px;
+        padding: 6px 0 0 75px;
+    }
+    .setting-file .cont svg{font-size: 32px;}
+}
+/**********************end settings for mobile******************/

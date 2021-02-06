@@ -1,0 +1,141 @@
+/****************start description*   4682b4 *****************/
+.personal{
+    background: #0D6EA9;
+    color: gainsboro;
+    position: relative;
+    padding: 0 0 30px 0;
+    margin: 57px 0 0 0;
+    /*start scroll*/
+    overflow-y: scroll;
+    max-height: 720px;
+    /*end scroll*/
+    width: 102%;
+}
+header{
+    width: 100%;
+    background: #6610C8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 0 10px 0;
+}
+h3{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 10px 60px;
+    color: cornsilk;
+}
+.row1{ padding: 120px 0 45px 0; }
+.cont img{ width: 130px; height: 130px; border-radius: 50% }
+.cont .p-name{
+    font-family: cursive;
+    top: 150px;
+    left: 80px;
+    position: absolute;
+    font-size: 20px;
+}
+.cont .number{ top: 34px; position: absolute; font-size: 17px; right: 110px;}
+.cont .fol{ position: absolute;top: 70px;font-size: 20px;left: 50px;}
+.row2{padding: 15px 0;}
+.desc{padding: 10px 0 20px 0;}
+.desc span{
+    display: flex;
+    position: relative;
+    font-size: 19px;
+    padding: 0 0 0 11px;
+}
+.desc button{
+    width: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 80px;
+    font-size: 20px;
+}
+/****************end description****************/
+/*****************start photos section************/
+.p-info{padding: 25px 0 10px 0;}
+.desc .re svg{color: red;}
+.p-info h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    border-top: 2px solid;
+}
+.p-info .photos{padding: 15px 25px 0 0 ;}
+.p-info img{width: 190px;height: 250px;padding: 5px;cursor: pointer;}
+.p-info video{width: 190px;height: 250px;border: 2px solid aliceblue;}
+/**********************end photos section*****************************/
+/*******************************start update profile*****************************/
+.update{
+    display: none;
+    position: relative;
+    top: -708px;
+    z-index: 9999999;
+    background: black;
+    height: 625px;
+    padding: 50px 0 0 0;
+    width: 616px;
+}
+.update button{
+    position: absolute;
+    top: 1px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    left: 0px;
+}
+.update .col-lg-12{
+    padding: 5px 0 50px 0;
+}
+.update .col-lg-12 h3{
+    margin: 0 0 0 148px;
+}
+.update .col-lg-12 input{
+    outline: none;
+    text-decoration: none;
+    border: none;
+    padding: 2px 0 2px 6px;
+    width: 200px;
+    border-radius: 5px;
+    color: gray;
+}
+.update input.agree{color: black;}
+/*******************************end update profile*****************************/
+
+/**********************start profile for mobile******************/
+@media only screen and (max-width:768px){
+    .personal{
+        display: none;
+        width:105%;
+        position: relative;
+        overflow-y: unset;
+    }
+    .row1 img{
+        width: 120px;
+        height: 120pxs;
+    }
+    .row1 .number{
+        position: absolute;
+        left: 70px;
+    }
+    .personal .desc button{
+        position: absolute;
+        left: 60px;
+        width: 300px;
+    }
+    .personal .p-info h3{padding-left: 110px;}
+    .personal .p-info img{height: 180px;}
+    .update{
+        position: relative;
+        width: 105%;
+        top: -718px;
+    }
+    .update .col-lg-12 h3{margin: 0;padding-left: 113px;}
+}
+/**********************end profile for mobile******************/

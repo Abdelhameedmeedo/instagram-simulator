@@ -1,0 +1,193 @@
+/*nav section*/
+nav{
+  width: 100%;
+  background: black;
+  color: white;
+  z-index: 99999;
+  padding: 6px 0;
+  position: fixed;
+}
+nav .nav-content{position: relative;padding: 10px 0;}
+nav .fa-inbox,nav .fa-instagram{font-size: 35px;color: seashell;}
+nav span{font-size: 25px;font-family: 'Lobster', cursive;color: mediumpurple;}
+nav .fa-inbox{
+  cursor: pointer;
+}
+.fa-paper-plane{
+  display: none;
+}
+/*messege section*/
+.msg {
+  top: 57px;
+  background: darkslategray;
+  position: fixed;
+  padding: 55px 0;
+  width: 41%;
+  right: 0;
+  display: none;
+    /*scroll*/
+  overflow-y: scroll;
+  max-height: 664px;
+  /*scroll*/
+  z-index: 9999;
+  bottom: -25px;
+  padding-bottom: 70px;
+  transition: all .5s ease-in-out;
+}
+.msg .fa-times{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 26px;
+}
+.msg .fa-times:hover{
+  background: red;
+  border-radius: 50%;
+  width: 26px;
+  height: 28px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+}
+.msg-cont{
+  padding-bottom: 20px;
+}
+.msg img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.msg span{
+  color: white;
+  position: relative;
+  top: 50px;
+  font-size: 21px;
+  cursor: pointer;
+}
+.msg i{
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  color: slategray;
+}
+.msg .fa-comment-medical{
+  border: 3px solid;
+  border-radius: 17px;
+  outline: none;
+  padding: 3px 4px 3px 6px;
+}
+.msg .fa-times-circle{
+  color: brown;
+}
+.msg .container .new-msg{
+  position: absolute;
+  text-align: center;
+  z-index: 9999999;
+  padding: 5px;
+  width: 135px;
+  top: 35px;
+  color: white;
+  background: black;
+  height: 35px;
+}
+/*start add new messege overlay*/
+.msg-overlay{
+  position: fixed;
+  top: 10%;
+  left: 62%;
+  width: 32%;
+  height: 90%;
+  z-index: 999999;
+  background: rgba(0,0,0,.2);
+}
+.msg-overlay .msg-container{
+  position: fixed;
+  width: 32%;
+  height: 50%;
+  left: 78%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999999;
+  background: rgba(6,7,6,.9);
+}
+.msg-container .msg-closebtn{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  line-height: 24px;
+  border: none;
+  background: crimson;
+  color: white;
+  font-weight: 600;
+  border-bottom-right-radius: 5px;
+  outline: none;
+}
+.msg-overlay .msg-container input{
+  position: absolute;
+  top: 145px;
+  left: 145px;
+  border: none;
+  outline: none;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 3px 3px 3px 5px;
+}
+.msg-overlay .msg-container .btn-add{
+  position: absolute;
+    outline: none;
+    border: none;
+    top: 270px;
+    left: 210px;
+    width: 70px;
+    font-size: 18px;
+    padding: 2px;
+}
+.msg-overlay .msg-container .btn-add:hover{
+  background: crimson;
+  color: white;
+}
+/*end add new messege overlay*/
+
+/***********start style for mobile********/
+@media only screen and (max-width:768px){
+  nav{width: 92.1%;position: fixed;margin: auto;}
+  .fa-inbox{display:none}
+  .fa-paper-plane{display: block;}
+  .msg{
+    position: fixed;
+    width: 100%;
+    max-height: 95%;
+  }
+  .msg .msg-cont img{
+    width: 110px;
+    height: 110px;
+  }
+  .msg .fa-comment-medical{position: relative;top: 10px;}
+  .msg-overlay{
+    position: fixed;
+    width: 100%;
+    height: 93%;
+    left: 0;
+    top: 0;
+  }
+  .msg-overlay .msg-container{
+    position: fixed;
+    width: 75%;
+    left: 50%;
+  }
+  .msg-overlay .msg-container input{
+    position: absolute;
+    left: 75px;
+  }
+  .msg-overlay .msg-container .btn-add{
+    position: absolute;
+    left: 110px;
+    width: 100px;
+  }
+}
+/***********end style for mobile********/
